@@ -1,0 +1,28 @@
+{"frames": {
+
+"O_piece.png":
+{
+	"frame": {"x":1,"y":1,"w":109,"h":110},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":25,"y":21,"w":109,"h":110},
+	"sourceSize": {"w":160,"h":160}
+},
+"X_piece.png":
+{
+	"frame": {"x":112,"y":1,"w":85,"h":106},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":38,"y":23,"w":85,"h":106},
+	"sourceSize": {"w":160,"h":160}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tictactoe_pieces.png",
+	"format": "RGBA8888",
+	"size": {"w":198,"h":112},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:178a9326068f940d7db2c44cba4cb3b9:cc1a7308be4ad8ad2602acbd235578ec:bfbcf125ee4a3bf56c026278bc014814$"
+}
+}

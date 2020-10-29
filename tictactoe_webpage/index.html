@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Data2Learning</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2" style="text-align: center;">
+                        <br />
+                        <div><strong>Jogador 1:</strong> Computador</div>
+                        <div><strong>Jogador 2:</strong> Você</div>
+                        <br />
+                        <div id="game_message" name="game_message" class="alert alert-warning" role="alert">
+                            Clique em <strong>Iniciar o jogo</strong> para começar a jogar
+                        </div>
+                    </div>
+                    <div class="col-lg-6" align="center">
+                        <br />
+                        <div id="game"></div>
+                        <br />
+                    </div>
+                    <div class="col-lg-4" align="center">
+                        <br /><br />
+                        <input class="form-control" type="text" id="input_url" name="input_url" placeholder="Insira a url da API do jogo" value="http://127.0.0.1:5001/minimax/play/" /><br />
+                        <div class="btn btn-primary btn-sm" onclick="mainState.getMove(document.getElementById('input_url').value);">Iniciar o jogo</div>
+                        <span id="restart_button" class="btn btn-danger btn-sm" onclick="game.state.start('main');" style="display: none;">Limpar tabuleiro</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <script src="js/phaser/phaser.min.js"></script>
+
+    <script src="js/tictactoe/boot.js"></script>
+    <script src="js/tictactoe/tictactoe.js"></script>
+    <script src="js/tictactoe/startscreen.js"></script>
+
+    
+
+
+</body>
+
+</html>
